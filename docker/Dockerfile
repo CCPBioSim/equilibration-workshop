@@ -16,7 +16,7 @@ RUN conda install matplotlib numpy ipywidgets -y
 RUN pip install mdtraj
 
 COPY --chown=1000:100 . .
-RUN rm -r AUTHORS LICENSE README.md docker .git .github && \
+RUN rm -rf AUTHORS LICENSE README.md docker .git .github && \
     mv equilT.png equilt.png
 
 # Copy lab workspace
