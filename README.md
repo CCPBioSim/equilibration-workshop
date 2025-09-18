@@ -1,14 +1,20 @@
-# equilibration-workshop
+# CCPBioSim Equilibration Workshop
 
-We have a vision of MD simulations as consisting of an initial equilibration phase, during which system variables relax to "realistic" values, followed by the "production" phase from which valid estimates of features or behaviours of interest can be extracted. So how do we decide when an MD simulation is long enough that it is equilibrated, and data collection can begin?
+[![build](https://github.com/ccpbiosim/equilibration-workshop/actions/workflows/build.yaml/badge.svg?branch=main)](https://github.com/ccpbiosim/equilibration-workshop/actions/workflows/build.yaml)
 
-This workshop looks at one of the most common methods for assessing equilibration: the calculation of RMSDs. It may be a common approach, but is it a good one? Maybe not.
+## Docker
 
-## Requirements
-A basic knowledge of Python and MD simulation methods
+This container is derived from the CCPBioSim JupyterHub image. This container
+adds the necessary software packages and notebook content to form a deployable
+course container. The source content for this course can be found at
+https://github.com/CCPBioSim/equilibration-workshop
 
-## Training material
-A Jupyter notebook and associated data files
+## How to Use
+
+In our containers we are using the JupyterHub default port 8888, so you should
+forward this port when deploying locally::
+
+    docker run -p 8888:8888 ghcr.io/jimboid/biosim-equilibration-workshop:latest
 
 ## Contact
 Please direct all comments and queries to [Charlie Laughton](mailto:charles.laughton@nottingham.ac.uk)
